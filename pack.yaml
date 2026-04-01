@@ -23,11 +23,11 @@ mod_loader_version: "latest"
 installer_version: "latest"
 
 # ─── Microsoft authentication ──────────────────────────────────────────────
-# Required for online play. Register a free Azure app and paste the client ID here.
+# Required for online play. Do NOT put your client ID here — set it as a
+# GitHub Actions secret named AZURE_CLIENT_ID instead. It will be injected
+# at build time and kept out of version control.
 # Setup guide: https://github.com/kenvandine/minecraft-server-snap/blob/main/docs/azure-setup.md
-# Remove or comment out this line to disable online auth (LAN/offline-mode only)
-#
-# azure_client_id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# If the secret is not set, the launcher will use offline mode only.
 
 # ─── Launcher appearance ───────────────────────────────────────────────────
 # Background color for the launcher hero panel (CSS hex color)

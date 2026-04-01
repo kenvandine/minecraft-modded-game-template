@@ -44,13 +44,18 @@ for all available fields.
 For players to sign in with their Microsoft account for online play, you need a free
 Azure app registration. Follow the
 [Azure setup guide](https://github.com/kenvandine/minecraft-server-snap/blob/main/docs/azure-setup.md)
-(takes about 5 minutes), then add your client ID to `pack.yaml`:
+(takes about 5 minutes), then add your client ID as a **GitHub Actions secret** —
+do not put it in `pack.yaml` or commit it to the repo.
 
-```yaml
-azure_client_id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-```
+In your repository go to **Settings → Secrets and variables → Actions → New repository secret**:
 
-If you skip this step, the launcher will work for LAN play and offline-mode servers.
+| Name | Value |
+|------|-------|
+| `AZURE_CLIENT_ID` | `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` |
+
+The build workflow injects it into the launcher at build time. If the secret is not
+set, the launcher falls back to offline mode (works for LAN and `online-mode=false`
+servers).
 
 ### Step 3 — Publish your first release
 

@@ -11,3 +11,5 @@ jobs:
     uses: kenvandine/minecraft-server-snap/.github/workflows/reusable-pack-build.yml@main
     with:
       config: pack.yaml
+    secrets:
+      azure_client_id: ${{ secrets.AZURE_CLIENT_ID }}
