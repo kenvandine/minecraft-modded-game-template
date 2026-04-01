@@ -1,0 +1,25 @@
+name: Release
+
+# Triggers on version tags (v1.0.0, v1.2.3, etc.)
+# Also supports manual dispatch for testing
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v1.0.0)'
+        required: true
+        type: string
+
+jobs:
+  release:
+    uses: kenvandine/minecraft-server-snap/.github/workflows/reusable-pack-release.yml@main
+    with:
+      # Path to your pack YAML — change if you renamed it
+      config: pack.yaml
+      # Use the pushed tag, or the manually entered tag for workflow_dispatch
+      tag: ${{ github.ref_name != 'main' && github.ref_name || inputs.tag }}
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

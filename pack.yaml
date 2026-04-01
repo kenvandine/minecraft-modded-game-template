@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Pack configuration — edit this file to define your modded Minecraft experience
+# Full reference: https://github.com/kenvandine/minecraft-server-snap/blob/main/docs/pack-yaml-reference.md
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Display name shown in the launcher window and GitHub release title
+name: "My Modpack"
+
+# Modpack version — bump this with each release (independent of Minecraft version)
+version: "1.0.0"
+
+# Target Minecraft Java Edition version
+minecraft_version: "1.21.1"
+
+# Mod loader — only "fabric" is supported
+mod_loader: fabric
+
+# Fabric loader version — "latest" resolves automatically at build time
+# Pin to a specific version (e.g. "0.16.9") for reproducible builds
+mod_loader_version: "latest"
+
+# Fabric installer version — used to generate the server JAR
+installer_version: "latest"
+
+# ─── Microsoft authentication ──────────────────────────────────────────────
+# Required for online play. Register a free Azure app and paste the client ID here.
+# Setup guide: https://github.com/kenvandine/minecraft-server-snap/blob/main/docs/azure-setup.md
+# Remove or comment out this line to disable online auth (LAN/offline-mode only)
+#
+# azure_client_id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# ─── Launcher appearance ───────────────────────────────────────────────────
+# Background color for the launcher hero panel (CSS hex color)
+background_color: "#0d1117"
+
+# ─── Java memory settings ──────────────────────────────────────────────────
+# Passed to the JVM when launching Minecraft
+# Increase Xmx for heavier modpacks (50+ mods typically need 6G+)
+java_args: "-Xms2G -Xmx4G"
+
+# ─── Mods ──────────────────────────────────────────────────────────────────
+# side: both   → included in server AND client artifacts (most mods)
+# side: server → server artifact only (e.g. profiling, anti-cheat utilities)
+# side: client → client artifact only (e.g. Sodium, Iris, UI mods)
+#
+# URL tips:
+#   Modrinth: open mod page → Versions → right-click download → Copy link address
+#   Use permanent CDN URLs (modrinth CDN URLs are stable per version)
+mods:
+  # Fabric API is required by almost all Fabric mods
+  - name: "Fabric API"
+    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/adK8OREi/fabric-api-0.105.0+1.21.1.jar"
+    side: both
+
+  # Sodium — client-side rendering optimization (not needed on server)
+  - name: "Sodium"
+    url: "https://cdn.modrinth.com/data/AANobbMI/versions/gmYFTMrX/sodium-fabric-0.6.0+mc1.21.1.jar"
+    side: client
+
+  # Lithium — server and client logic optimization
+  - name: "Lithium"
+    url: "https://cdn.modrinth.com/data/gvQqBUqZ/versions/aTKSXM8f/lithium-fabric-mc1.21.1-0.13.0.jar"
+    side: both
+
+  # Add more mods below following the same pattern:
+  # - name: "Mod Name"
+  #   url: "https://cdn.modrinth.com/..."
+  #   side: both

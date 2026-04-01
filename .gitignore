@@ -1,0 +1,9 @@
+# Build artifacts
+dist/
+
+# game-create download cache
+.game-create-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
