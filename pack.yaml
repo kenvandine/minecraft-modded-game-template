@@ -64,6 +64,11 @@ mods:
     url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/yGAe1owa/fabric-api-0.116.9%2B1.21.1.jar"
     side: both
 
+  # Iris Shaders — required if you want to use shader packs (uncomment to enable)
+  - name: "Iris Shaders"
+    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/fDpuVzVr/iris-fabric-1.10.7%2Bmc1.21.11.jar"
+    side: client
+    
   # Sodium — client-side rendering optimization (not needed on server)
   - name: "Sodium"
     url: "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar"
@@ -73,11 +78,6 @@ mods:
   - name: "Lithium"
     url: "https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar"
     side: both
-
-  # Iris Shaders — required if you want to use shader packs (uncomment to enable)
-  - name: "Iris Shaders"
-    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/.../iris-fabric-mc1.21.1.jar"
-    side: client
 
   # FerriteCore — server and client logic optimization
   - name: "FerriteCore"
