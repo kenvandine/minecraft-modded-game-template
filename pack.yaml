@@ -4,10 +4,10 @@
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Display name shown in the launcher window and GitHub release title
-name: "My Modpack"
+name: "Kaden's Minecraft World"
 
 # Modpack version — bump this with each release (independent of Minecraft version)
-version: "1.0.0"
+version: "0.0.1"
 
 # Target Minecraft Java Edition version
 minecraft_version: "1.21.1"
@@ -63,9 +63,181 @@ mods:
     side: both
 
   # Iris Shaders — required if you want to use shader packs (uncomment to enable)
-  # - name: "Iris Shaders"
-  #   url: "https://cdn.modrinth.com/data/YL57xq9U/versions/.../iris-fabric-mc1.21.1.jar"
-  #   side: client
+   - name: "Iris Shaders"
+     url: "https://cdn.modrinth.com/data/YL57xq9U/versions/.../iris-fabric-mc1.21.1.jar"
+     side: client
+
+  # FerriteCore — server and client logic optimization
+  - name: "FerriteCore"
+    url: "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar"
+    side: both
+
+  # ScalableLux — Contains all the performance improvements from Starlight with additional bug fixes.
+  - name: "ScalableLux"
+    url: "https://cdn.modrinth.com/data/Ps1zyz6x/versions/Yx1tgJMI/ScalableLux-0.1.0.1%2Bfabric.d0d58ab-all.jar"
+    side: both
+
+  # Entity Culling — Using async path-tracing to hide Block-/Entities that are not visible.
+  - name: "Entity Culling"
+    url: "https://cdn.modrinth.com/data/NNAgCjsB/versions/zzguHbcL/entityculling-fabric-1.10.0-mc1.21.1.jar"
+    side: client
+
+  # Krypton — A mod to optimize the Minecraft networking stack.
+  - name: "Krypton"
+    url: "https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar"
+    side: both
+
+  # Concurrent Chunk Management Engine — A Fabric mod designed to improve the chunk performance of Minecraft.
+  - name: "C2ME"
+    url: "https://cdn.modrinth.com/data/VSNURh3q/versions/DSqOVCaF/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.362.jar"
+    side: both
+
+  # Jade — Shows information about what you are looking at. (Hwyla/Waila fork for Minecraft 1.16+)
+  - name: "Jade"
+    url: "https://cdn.modrinth.com/data/nvQzSEkH/versions/5Sbkzz4O/Jade-1.21.1-Fabric-15.10.5.jar"
+    side: both
+
+  # Jade — Shows information about what you are looking at. (Hwyla/Waila fork for Minecraft 1.16+)
+  - name: "Jade Modded Entities"
+    url: "https://cdn.modrinth.com/data/GAJkSU0A/versions/NfLGfYBH/jademoddedentities-fabric-1.21.1-1.3.1.jar"
+    side: both
+
+  # Spark — spark is a performance profiler for Minecraft clients, servers and proxies.
+  - name: "Spark"
+    url: "https://cdn.modrinth.com/data/l6YH9Als/versions/cALUj9l1/spark-1.10.109-fabric.jar"
+    side: both
+
+  # AppleSkin — Food/hunger-related HUD improvements.
+  - name: "AppleSkin"
+    url: "https://cdn.modrinth.com/data/EsAfCjCV/versions/b5ZiCjAr/appleskin-fabric-mc1.21-3.0.6.jar"
+    side: both
+
+  # Clumps — Clumps XP orbs together to reduce lag.
+  - name: "Clumps"
+    url: "https://cdn.modrinth.com/data/Wnxd13zP/versions/3ene3W1l/Clumps-fabric-1.21.1-19.0.0.1.jar"
+    side: both
+
+  # Carpet — Take full control over your vanilla game.
+  - name: "Carpet Mod"
+    url: "https://cdn.modrinth.com/data/TQTTVgYE/versions/f2mvlGrg/fabric-carpet-1.21-1.4.147%2Bv240613.jar"
+    side: both
+
+  # Terralith — Adds 100+ biomes using vanilla blocks only
+  - name: "Terralith"
+    url: "https://cdn.modrinth.com/data/8oi3bsk5/versions/MuJMtPGQ/Terralith_1.21.x_v2.5.8.jar"
+    side: server
+
+  # Terralith —
+  - name: "Stardust Labs Intro Message Remover"
+    url: "https://cdn.modrinth.com/data/sk4iFZGy/versions/BHr8OLOk/zRemove_SDL_Intro_v1.2.2.jar"
+    side: server
+
+  # Biomes O' Plenty — Adds 50+ unique biomes to enhance your world, with new trees, flowers, and more!
+  #Requires GlitchCore and TerraBlender
+  - name: "Biomes O' Plenty"
+    url: "https://cdn.modrinth.com/data/HXF82T3G/versions/YPm4arUa/BiomesOPlenty-fabric-1.21.1-21.1.0.13.jar"
+    side: both
+
+  # GlitchCore — A library mod aimed at abstracting mod loaders and providing various utilities for our mods.
+  - name: "GlitchCore"
+    url: "https://cdn.modrinth.com/data/s3dmwKy5/versions/lbSHOhee/GlitchCore-fabric-1.21.1-2.1.0.0.jar"
+    side: both
+
+  # TerraBlender — A library mod for adding biomes in a simple and compatible manner!
+  - name: "TerraBlender"
+    url: "https://cdn.modrinth.com/data/kkmrDlKT/versions/XNtIBXyQ/TerraBlender-fabric-1.21.1-4.1.0.8.jar"
+    side: both
+
+  # Nature's Compass — Allows you to locate biomes anywhere in the world.
+  - name: "Nature's Compass"
+    url: "https://cdn.modrinth.com/data/fPetb5Kh/versions/9W2MUsnU/NaturesCompass-1.21.1-2.2.7-fabric.jar"
+    side: both
+
+  # Explorer's Compass — Allows you to locate structures anywhere in the world.
+  - name: "Explorer's Compass"
+    url: "https://cdn.modrinth.com/data/RV1qfVQ8/versions/i1WCJNIW/ExplorersCompass-1.21.1-2.2.5-fabric.jar"
+    side: both
+
+  # Nature's Spirit — A minecraft mod which enhances world generation with new biomes, blocks, and items.
+  - name: "Nature's Spirit"
+    url: "https://cdn.modrinth.com/data/WBvnqHfV/versions/TRMapjpU/naturespirit-2.2.5-1.21.1.jar"
+    side: both
+
+  # Falling Leaves — Adds a neat little particle effect to leaf blocks.
+  - name: "Falling Leaves"
+    url: "https://cdn.modrinth.com/data/WhbRG4iK/versions/Y0zS16Bk/fallingleaves-1.17.1%2B1.21.1.jar"
+    side: client
+
+  # Effective — Fabric client-side mod designed to improve Minecraft's ambience through particles, visual effects and sounds.
+  # WARNING ---- INTENDED TO BE USED WITH FAST OR FANCY GRAPHICS, NOT FABULOUS
+  - name: "Effective"
+    url: "https://cdn.modrinth.com/data/pcPXJeZi/versions/ZV1N3Ikr/effective-2.4.8-1.21.1.jar"
+    side: client
+
+  # Ambient Sounds — Sounds.
+  - name: "Ambient Sounds"
+    url: "https://cdn.modrinth.com/data/fM515JnW/versions/D31kF2Wq/AmbientSounds_FABRIC_v6.3.5_mc1.21.1.jar"
+    side: client
+
+  # Visuality — Little visual improvements by adding a bunch of new particles.
+  - name: "Visuality"
+    url: "https://cdn.modrinth.com/data/rI0hvYcd/versions/dhKbgdIb/visuality-0.7.7%2B1.21.jar"
+    side: client
+
+  # HandCrafted — Make your house a home!
+  - name: "HandCrafted"
+    url: "https://cdn.modrinth.com/data/pJmCFF0p/versions/f0pKpUWd/handcrafted-fabric-1.21.1-4.0.3.jar"
+    side: both
+
+  # Adorn — Decorate your home!
+  - name: "Adorn"
+    url: "https://cdn.modrinth.com/data/E6FUtRJh/versions/eOTfiVsw/Adorn-6.1.2%2B1.21.1-fabric.jar"
+    side: both
+
+  # Supplementaries — Vanilla+ additions: Jars, signposts, faucets, weather vanes spring launchers, sconces, planters, lights, decoration and automation
+  - name: "Supplementaries"
+    url: "https://cdn.modrinth.com/data/fFEIiSDQ/versions/wVkX2tMY/supplementaries-1.21-3.5.27-fabric.jar"
+    side: both
+
+  # Beautify — Adds lots of vanilla-styled ways to spice up your builds.
+  - name: "Beautify"
+    url: "https://cdn.modrinth.com/data/DhSSvaxs/versions/ZyaUkJxq/beautify-2.0.0%2B1.21.1.jar"
+    side: both
+
+  # Fairy Lights — Decorative string lights to light up your world! A Fabric port.
+  - name: "Fairy Lights"
+    url: "https://cdn.modrinth.com/data/OuLVx5LM/versions/I5KAi0sD/fairylights-1.1.3%2B1.21.1_fabric.jar"
+    side: both
+
+  # Comforts — Adds sleeping bags and hammocks for, respectively, portability and turning day to night, without setting new spawns. Comes in 16 different colors!
+  - name: "Comforts"
+    url: "https://cdn.modrinth.com/data/SaCpeal4/versions/LUPOTXbk/comforts-fabric-9.0.5%2B1.21.1.jar"
+    side: both
+
+  # Critters and Companions — Adds a few new friends to your world!
+  - name: "Critters and Companions"
+    url: "https://cdn.modrinth.com/data/Yd4wb5wZ/versions/wHpQleS4/crittersandcompanions-fabric-1.21.1-2.3.4.jar"
+    side: both
+
+  # PatPat — Allows you to pat ANY loved and unloved living mobs in Minecraft!
+  - name: "PatPat"
+    url: "https://cdn.modrinth.com/data/dw7LChq9/versions/rhN1HJcz/PatPat-1.2.3%2B1.21.1.jar"
+    side: both
+
+  # Friends&Foes — Adds outvoted and forgotten mobs from the mob vote, expanding on their original concepts and adding new vanilla-like features. The mod includes: Copper Golem, Crab, Glare, Moobloom, Iceologer, Rascal, Tuff Golem, Wildfire, Illusioner, Zombie Horse
+  - name: "Friends&Foes"
+    url: "https://cdn.modrinth.com/data/POQ2i9zu/versions/SjoyrJsH/friendsandfoes-fabric-4.0.23%2Bmc1.21.1.jar"
+    side: both
+
+  # Friends&FoesAddon — An addon for the Friends&Foes mod, adding a beekeeper hut structure.
+  - name: "Friends&Foes Beekeeper hut"
+    url: "https://cdn.modrinth.com/data/Kt4RVKEd/versions/zxhxIzv3/beekeeperhut-fabric-3.0.2%2Bmc1.21.1.jar"
+    side: server
+
+  # Friends&FoesAddon — An addon for the Friends&Foes mod, adding one moobloom variant for each flower.
+  - name: "Friends&Foes Flowery Mooblooms"
+    url: "https://cdn.modrinth.com/data/ECOSu6pa/versions/h7kWOOOB/flowerymooblooms-fabric-3.0.2%2Bmc1.21.1.jar"
+    side: both
 
   # Add more mods below following the same pattern:
   # - name: "Mod Name"
@@ -80,6 +252,6 @@ mods:
 #   Modrinth: open shader page → Versions → right-click download → Copy link address
 #   Shader pack URLs end in .zip (not .jar)
 #
-# shader_packs:
-#   - name: "Complementary Reimagined"
-#     url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/.../ComplementaryReimagined_r5.4.zip"
+shader_packs:
+  - name: "Complementary Reimagined"
+    url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/.../ComplementaryReimagined_r5.4.zip"

@@ -1,19 +1,4 @@
-# minecraft-modded-game-template
-
-A template repository for creating a modded Minecraft game experience using the
-[minecraft-server-snap](https://github.com/kenvandine/minecraft-server-snap) framework.
-
-Push a tag → get a GitHub release with a server artifact, a Linux launcher, a
-Windows launcher, and a macOS launcher — automatically.
-
----
-
-## Using this template
-
-Click **"Use this template"** → **"Create a new repository"** on GitHub, then follow
-the steps below.
-
----
+# Kaden's Modded Minecraft World
 
 ## Setup (5 minutes)
 
@@ -35,10 +20,6 @@ mods:
     side: both
   # Add your mods here
 ```
-
-See the [pack YAML reference](https://github.com/kenvandine/minecraft-server-snap/blob/main/docs/pack-yaml-reference.md)
-for all available fields.
-
 ### Step 2 — (Optional) Set up Microsoft auth
 
 For players to sign in with their Microsoft account for online play, you need a free
@@ -75,27 +56,6 @@ GitHub Actions will automatically:
 6. Create a GitHub release with all four artifacts
 
 Watch the progress under **Actions** in your repository.
-
----
-
-## Adding and updating mods
-
-> See [docs/finding-mods.md](docs/finding-mods.md) for a full guide covering how to
-> search Modrinth, verify compatibility, get stable URLs, check dependencies, and choose
-> which `side` each mod belongs on.
-
-Find the mod on [modrinth.com](https://modrinth.com), navigate to **Versions**, select
-the version matching your `minecraft_version` and `fabric` loader, right-click the
-download button and copy the URL.
-
-Add it to `pack.yaml`:
-
-```yaml
-mods:
-  - name: "Iris Shaders"
-    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/.../iris-1.8.0+mc1.21.1.jar"
-    side: client
-```
 
 Then publish a new release:
 
