@@ -48,7 +48,7 @@ java_args: "-Xms2G -Xmx4G"
 #
 shader_packs:
   - name: "Complementary Reimagined"
-    irl: "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
+    url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
 
 # ─── Mods ──────────────────────────────────────────────────────────────────
 # side: both   → included in server AND client artifacts (most mods)
