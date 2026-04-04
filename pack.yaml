@@ -10,7 +10,7 @@ name: "Kaden's Minecraft World"
 version: "0.0.1"
 
 # Target Minecraft Java Edition version
-minecraft_version: "1.21.11"
+minecraft_version: "1.21.1"
 
 # Mod loader — only "fabric" is supported
 mod_loader: fabric
@@ -61,22 +61,22 @@ shader_packs:
 mods:
   # Fabric API is required by almost all Fabric mods
   - name: "Fabric API"
-    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/i5tSkVBH/fabric-api-0.141.3%2B1.21.11.jar"
+    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/ID8pq1x1/fabric-api-0.116.10%2B1.21.1.jar"
     side: both
 
   # Iris Shaders — required if you want to use shader packs (uncomment to enable)
   - name: "Iris Shaders"
-    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/fDpuVzVr/iris-fabric-1.10.7%2Bmc1.21.11.jar"
+    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar"
     side: client
     
   # Sodium — client-side rendering optimization (not needed on server)
   - name: "Sodium"
-    url: "https://cdn.modrinth.com/data/AANobbMI/versions/UddlN6L4/sodium-fabric-0.8.7%2Bmc1.21.11.jar"
+    url: "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar"
     side: client
 
   # Lithium — server and client logic optimization
   - name: "Lithium"
-    url: "https://cdn.modrinth.com/data/gvQqBUqZ/versions/Ow7wA0kG/lithium-fabric-0.21.4%2Bmc1.21.11.jar"
+    url: "https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar"
     side: both
 
   # FerriteCore — server and client logic optimization
