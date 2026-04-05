@@ -38,3 +38,5 @@ jobs:
       version: ${{ needs.set-version.outputs.version }}
     secrets:
       azure_client_id: ${{ secrets.AZURE_CLIENT_ID }}
+      server_ip: ${{ secrets.SERVER_IP }}
+      server_port: ${{ secrets.SERVER_PORT }}
